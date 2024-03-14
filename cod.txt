@@ -1,0 +1,101 @@
+namespace aula2;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Calculadora calc = new();
+
+        int opcao = 0;
+
+        do
+        {
+
+        opcao = calc.Menu();
+        if (opcao == 0) break;
+
+        double n1 = calc.PedirNumero();
+        double n2 = calc.PedirNumero();
+
+        double res = 0;
+
+        switch (opcao)
+        {
+            case 1:
+                res = calc.Somar(n1, n2);
+                break;
+            case 2:
+                res = calc.Subtrair(n1, n2);
+                break;
+            case 3:
+                res = calc.Multiplicar(n1, n2);
+                break;
+            case 4:
+                res = calc.Dividir(n1, n2);
+                break;
+        }
+
+        Console.WriteLine(res);
+
+        } while (opcao != 0);
+    }
+}
+
+
+
+arquivo Calculadora.cs \/
+
+class Calculadora
+{
+    public int Menu()
+    {
+        Console.WriteLine("# Calculadora #");
+        Console.WriteLine("O que deseja fazer?");
+        Console.WriteLine("1. Somar");
+        Console.WriteLine("2. Subtrair");
+        Console.WriteLine("3. Multiplicar");
+        Console.WriteLine("4. Dividir");
+        Console.WriteLine("0. Sair");
+        int opcao = Convert.ToInt32(Console.ReadLine());
+
+        return opcao;
+    }
+
+    public double PedirNumero()
+    {
+        Console.Write(">> ");
+        double n = Convert.ToDouble(Console.ReadLine());
+        return n;
+    }
+
+    public double Somar(double a, double b)
+    {
+        return a + b;
+    }
+
+    public double Subtrair(double a, double b)
+    {
+        return a - b;
+    }
+
+    public double Multiplicar(double a, double b)
+    {
+        return a * b;
+    }
+
+    public double Dividir(double a, double b)
+    {
+        return a / b;
+    }
+}
+
+
+
+class NotaAluno
+{
+    public string Nome { get; set; }
+    public double Nota1 { get; set; }
+    public double Nota2 { get; set; }
+    public double Nota3 { get; set; }
+    public bool Passou { get; }
+}
