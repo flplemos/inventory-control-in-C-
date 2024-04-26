@@ -40,3 +40,4 @@ C:\Users\Eduardo\Desktop\Programação\trabalhos\gaba\pti_algoritmos\obj\Debug\n
 C:\Users\Eduardo\Desktop\Programação\trabalhos\gaba\pti_algoritmos\obj\Debug\net8.0\pti_algoritmos.pdb
 C:\Users\Eduardo\Desktop\Programação\trabalhos\gaba\pti_algoritmos\obj\Debug\net8.0\pti_algoritmos.genruntimeconfig.cache
 C:\Users\Eduardo\Desktop\Programação\trabalhos\gaba\pti_algoritmos\obj\Debug\net8.0\ref\pti_algoritmos.dll
+E:\Estudos\senac\alg2\pti_algoritmos\obj\Debug\net8.0\pti_algoritmos.sourcelink.json
